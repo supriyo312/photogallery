@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 4vh;
+}
+body{
+    background-image: url("Flowers/pdmpr.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:2fr 5fr 5fr 5fr 5fr 5fr 5fr 5fr 5fr 5fr;
+}
+header{
+    grid-column: 1 / 5;
+    background-color: transparent;
+    height: 10vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+aside{
+    background-color: transparent;
+    grid-row: 2 / 5;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(100, 148, 237, 0.501);
+    border-radius: 10px;
+    text-shadow: 0 0 5px rgb(71, 70, 70);
+    margin-left: 1vh;
+}
+article{
+    grid-column: 2 / 5;
+    grid-row: 2 / 5;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    grid-column: 1 / 5;
+    grid-row: 5 / 9;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    grid-column: 1 / 5;
+    grid-row: 9 / 11;
+    background-color: #292525c7;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
+}
+
+
+header .links a{
+    text-decoration: none;
+    margin: 0 1vh;
+    color: aquamarine;
+}
+header .links a:hover{
+    color: #fbc40e;
+}
+header h1{
+    color: rgb(251, 143, 2);
+    font-size: 5vh;
+    font-family: cursive;
+}
+
+
+
+
+aside p{
+    font-size: 4.2vh;
+    font-family: calibri;
+    margin: 2vh 1vh 0 1vh;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
+aside button{
+    padding: .5vh;
+    height: fit-content;
+    width: fit-content;
+    font-size: 3vh;
+    border-radius: 30px;
+    color: blue;
+}
+aside button:hover{
+    cursor: pointer;
+    color: #ebbf2e;
+    background-color: rgb(3, 3, 107);
+}
+article .img{
+    background-color: chartreuse;
+    margin: 1vh;
+    height: 35vh;
+    width: 30vh;
+    border: 1vh inset #fff;
+}
+article .img:hover{
+    border: 1.5vh outset #fff;
+}
+article .img1{
+    width: 60vh;
+}
+article .img3{
+    width: 50vh;
+}
+article .img6{
+    width: 60vh;
+}
+article .img4{
+    width: 40vh;
+}
+article .img img{
+    width: 100%;
+    height: 100%;
+}
+
+main #conts{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px inset #fff;
+    margin: 1vh;
+    width: 47vh;
+    height: 35vh;
+    position: relative;
+    transition: .10s;
+}
+main #conts:hover{
+    border: .5vh outset #fff;
+}
+main #conts img{
+    width: 100%;
+    height: 100%;
+}
+main .catHead{
+    text-align: center;
+    width: 100%;
+    font-family: 'segoe UI';
+    font-size: 6vh;
+    font-weight: 900;
+    margin-top: 2vh;
+    background-color: #ffffff9b;
+    color: darkblue;
+}
+main h3{
+    position: absolute;
+    bottom: 2vh;
+    left: 4vh;
+    color: #fbc40e;
+    text-shadow: 0 0 5px black;
+}
+
+footer .footLinks{
+    height: 98%;
+    width: 33%;
+    background-color: transparent;
+    margin: .5vh;
+    text-align: center;
+}
+footer .footAddress{
+    height: 98%;
+    width: 33%;
+    background-color: transparent;
+    margin: .5vh;
+    text-align: center;
+}
+footer .footIcons{
+    height: 98%;
+    width: 33%;
+    background-color: transparent;
+    margin: .5vh;
+    text-align: center;
+}
+footer .footHeadings{
+    color: aqua;
+    display: block;
+}
+footer .footLinks a{
+    display: block;
+    text-align: left;
+    margin: 2vh 0 2vh 2vh;
+    text-decoration: none;
+    font-size: 4vh;
+    color: #ebbf2e;
+    font-family: arial;
+    text-shadow: .1vh .1vh 1px aquamarine;
+    font-weight: 100;
+}
+footer .footLinks a:hover{
+    text-shadow: .3vh .3vh 1px aquamarine;
+}
+
+footer .footAddress p{
+    margin: 2vh 0 2vh 8vh;
+    color: #fbc40e;
+    text-shadow: .1vh .1vh 1px aquamarine;
+    font-weight: bold;
+    text-align: left;
+}
+footer .footIcons .fa-brands{
+    margin: 4vh 2vh;
+    font-size: 10vh;
+    cursor: pointer;
+}
+
+header .fa-bars{
+    color: #fff;
+    cursor: pointer;
+}
+header .fa-bars:hover{
+    color: #fbc40e;
+}
+
+
+
+
+@media  (width <= 430px) {
+    body{
+        grid-template-rows: 1fr 5fr 5fr 3fr 5fr 5fr 5fr 7fr;
+    }
+    article{
+        grid-column: 1 /5;
+        grid-row: 2 / 4;
+        height: fit-content;
+    }
+    aside{
+        grid-row-start: 4;
+        grid-column: 1 / 5;
+    }
+    
+    footer{
+        grid-row: 8 / 9;
+        grid-column: 1 / 5;
+        flex-direction: column;
+    }
+    footer .footAddress pre{
+        position: relative;
+        left: -10vh;
+        width: fit-content;
+        height: fit-content;
+    }
+    main{
+        height: fit-content;
+    }
+    header .links{
+        display: inline;
+        position: absolute;
+        top: 10vh;
+    }
+    header .links a{
+        font-size: 3vh;
+    }
+    footer .footLinks a{
+        text-align: start;
+        width: 50vh;
+    }
+    footer .footHeadings{
+        width: 50vh;
+    }
+    footer .footIcons .fa-brands{
+        
+        width: 50vh;
+    }
+}
